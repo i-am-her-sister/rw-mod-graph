@@ -283,7 +283,10 @@ const states = [
             ["VI", "MA"],
             ["OS", "MA"],
             ["OS", "AY"],
-            ["AY", "SH"]
+            ["AY", "SH"],
+            //["NP", "EU"],
+            ["NP", "FR"],
+            ["NP", "GS"]
         ],
         "groups": {
             "Official regions": ["SU", "HI", "DS", "GW", "LM", "VS", "SH", "UW", "SS", "CC", "SI", "LF", "SB", "DM", "LC", "OE"],  // Регионы входят в группу Official regions
@@ -573,7 +576,10 @@ const states = [
             ["VI", "MA"],
             ["OS", "MA"],
             ["OS", "AY"],
-            ["AY", "SH"]
+            ["AY", "SH"],
+            //["NP", "EU"],
+            ["NP", "FR"],
+            ["NP", "GS"]
         ],
         "groups": {
             "Official regions": ["SU", "HI", "DS", "GW", "LM", "VS", "SH", "UW", "SS", "CC", "SI", "LF", "SB", "LC", "OE"],  // Регионы SU и HI входят в группу Group C
@@ -873,7 +879,10 @@ const states = [
             ["VI", "MA"],
             ["OS", "MA"],
             ["OS", "AY"],
-            ["AY", "SH"]
+            ["AY", "SH"],
+            //["NP", "EU"],
+            ["NP", "FR"],
+            ["NP", "GS"]
         ],
         "groups": {
             "Official regions": ["SU", "HI", "DS", "GW", "SL", "VS", "SH", "UW", "SS", "CC", "SI", "LF", "SB", "MS", "LC", "OE"],
@@ -1176,7 +1185,10 @@ const states = [
             ["OS", "MA"],
             ["OS", "AY"],
             ["AY", "SH"],
-            ["FN", "OE"]
+            ["FN", "OE"],
+            //["NP", "EU"],
+            ["NP", "FR"],
+            ["NP", "GS"]
         ],
         "groups": {
             "Official regions": ["SU", "HI", "DS", "GW", "SL", "VS", "SH", "UW", "SS", "CC", "SI", "LF", "SB", "MS", "LC", "OE"],
@@ -1486,7 +1498,10 @@ const states = [
             ["AY", "SH"],
             ["SK", "SL"],
             ["SK", "RF"],
-            ["SK", "SEC"]
+            ["SK", "SEC"],
+            //["NP", "EU"],
+            ["NP", "FR"],
+            ["NP", "GS"]
         ],
         "groups": {
             "Official regions": ["SU", "HI", "DS", "GW", "SL", "VS", "SH", "UW", "SS", "CC", "SI", "LF", "SB", "MS", "LC", "OE"],
@@ -1796,7 +1811,10 @@ const states = [
             ["VI", "MA"],
             ["OS", "MA"],
             ["OS", "AY"],
-            ["AY", "SH"]
+            ["AY", "SH"],
+            //["NP", "EU"],
+            ["NP", "FR"],
+            ["NP", "GS"]
         ],
         "groups": {
             "Official regions": ["SU", "HI", "DS", "GW", "SL", "VS", "SH", "UW", "SS", "CC", "SI", "LF", "SB", "MS", "LC", "OE"],
@@ -2090,7 +2108,10 @@ const states = [
             ["VI", "MA"],
             ["OS", "MA"],
             ["OS", "AY"],
-            ["AY", "SH"]
+            ["AY", "SH"],
+            //["NP", "EU"],
+            ["NP", "FR"],
+            ["NP", "GS"]
         ],
         "groups": {
             "Official regions": ["SU", "HI", "DS", "GW", "SL", "VS", "SH", "UW", "RM", "CC", "SI", "LF", "SB", "MS", "LC", "OE"],
@@ -2603,7 +2624,10 @@ const states = [
             ["DI", "SL"],
             ["SW", "CC"],
             ["AY", "UW"],
-            ["AY", "SH"]
+            ["AY", "SH"],
+            //["NP", "EU"],
+            ["NP", "FR"],
+            ["NP", "GS"]
         ],
         "groups": {
             "Official regions": ["SU", "HI", "DS", "GW", "SL", "VS", "SH", "UW", "SS", "CC", "SI", "LF", "SB", "MS", "LC", "OE"],
