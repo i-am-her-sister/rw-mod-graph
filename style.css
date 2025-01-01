@@ -28,7 +28,7 @@ body {
 
 /* Ограничиваем высоту секции с чекбоксами */
 #controls {
-    max-height: calc(100vh - 338px); /* Установите нужную вам высоту */
+    max-height: calc(100vh - 337px); /* Установите нужную вам высоту */
     max-width: 100%;
     overflow-y: auto; /* Включаем вертикальную прокрутку */
 }
@@ -79,7 +79,7 @@ section {
 #graph-container {
     flex-grow: 1;
     width: 70vw; /* Ширина контейнера равна 70% от ширины экрана */
-    height: calc(100vh - 200px); /* Высота контейнера равна 80% от высоты экрана */
+    height: calc(100vh - 199px); /* Высота контейнера равна 80% от высоты экрана */
     position: relative;
     padding: 20px;
     box-sizing: border-box;
@@ -236,38 +236,38 @@ circle {
         width: 100%; /* Делаем блоки на всю ширину экрана */
     }
 
+    #controls {
+        max-height: 90vh;
+    }
+
     #graph-container {
         margin-bottom: 20px;
+        height: 90vh;
     }
 }
 
 /* Планшеты (ширина экрана от 768px до 1023px) */
 @media (min-width: 768px) and (max-width: 1023px) {
-    /*main {
-        flex-wrap: wrap; /* Разрешаем перенос блоков на новую строку */
-    /*}
-    */
+    
     body {
         overflow: auto; /* Разрешить прокрутку на небольших экранах */
     }
 
-    /*aside,
+    main {
+        flex-direction: column; /* Меняем направление флексбокса на вертикальное */
+    }
+
+    aside,
     #graph-container {
-        width: 100%;
-    }*/
-    
-    header {
-        margin-left: 0;
+        width: 100%; /* Делаем блоки на всю ширину экрана */
     }
-    
-    #legend {
-        position: static;
-        width: 100%;
-        margin-top: 20px;
+
+    #controls {
+        max-height: 90vh;
     }
-    
-    #restart-simulation {
-        position: static;
-        margin: 20px auto;
+
+    #graph-container {
+        margin-bottom: 20px;
+        height: 90vh;
     }
 }
