@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rain World Modded Regions Connection Graph  (for 1.9)</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="top-bar">
+        <div id="legend">
+            <div class="columns">
+                <div class="column">
+                    <ul>
+                        <li class="official-regions"><strong>Official regions</strong></li>
+                        <li class="rw-drought"><strong>RW: Drought</strong></li>
+                        <li class="sunlit-trail"><strong>Sunlit Trail +additions</strong></li>
+                    </ul>
+                </div>
+                <div class="column">
+                    <ul>
+                        <li class="shrouded-assembly"><strong>Shrouded Assembly</strong></li>
+                        <li class="old-new-horizons"><strong>Old New Horizons</strong></li>
+                        <li class="other-regions"><strong>Other regions</strong></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <header>
+            <h1>Rain World Modded Regions Connection Graph (for 1.9)</h1>
+        </header>
+        <button id="restart-simulation">Restart Simulation</button>
+    </div>
+    <main>
+        <aside>
+            <section id="state-controls">
+                <label for="state-select">Select world state:</label>
+                <select id="state-select">
+                    <option value="0">Spearmaster</option>
+                    <option value="1">Artificer</option>
+                    <option value="2">Hunter</option>
+                    <option value="3">Gourmand</option>
+                    <option value="4">Survivor</option>
+                    <option value="5">Monk</option>
+                    <option value="6">Rivulet</option>
+                    <option value="7">Saint</option>
+                    <option value="8">Inv</option>
+                    <option value="9">Wanderer</option>
+                    <!-- Добавьте остальные опции... -->
+                </select>
+            </section>
+            <section id="controls">
+                <!-- Тут будут чекбоксы... -->
+            </section>
+        </aside>
+        <section id="graph-container"></section>
+    </main>
+    <!-- Подключение библиотеки D3.js -->
+    <script src="https://d3js.org/d3.v6.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
