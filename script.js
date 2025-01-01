@@ -2790,6 +2790,52 @@ let state = states[selectedIndex]; // Получение данных о сос�
 // Массив для хранения выбранных регионов
 let selectedRegions = [];
 
+// Создаем объект соответствия классов легенды и имен групп
+const legendMap = {
+    "official-regions": 'Official regions',
+    "rw-drought": 'RW: Drought',
+    "sunlit-trail": 'Sunlit Trail',
+    "shrouded-assembly": 'Shrouded Assembly',
+    "old-new-horizons": 'Ols New Horizons'
+};
+
+document.addEventListener('DOMContentLoaded', function() {
+    // Находим все элементы легенды
+    const legendItems = document.querySelectorAll('#legend li');
+
+    // Добавляем слушатель событий для каждого элемента легенды
+    legendItems.forEach(item => {
+        item.addEventListener('click', toggleGroup);
+    });
+});
+
+// Функция для включения/выключения всех чекбоксов одной группы
+function toggleGroup(event) {
+    let selectedIndex = parseInt(document.getElementById('state-select').value);
+    let state = states[selectedIndex]; // Получение данных о состоянии
+    const groupClass = event.target.classList[0];
+    const groupName = legendMap[groupClass]; // Получаем имя группы по классу
+
+    let checkboxes;
+
+    if (groupName) { // Если группа найдена
+        console.log("state", state);
+        const groupIds = groups[state.name][groupName]; // Получаем уникальные идентификаторы для группы в текущем состоянии
+        checkboxes = Array.from(document.querySelectorAll('input')).filter(cb => groupIds.includes(cb.value)); // Выбираем чекбоксы по уникальным идентификаторам
+    } else { // Если группа не найдена (кнопка "Other regions")
+        checkboxes = Array.from(document.querySelectorAll('input')).filter(cb => !Object.values(groups[state.name]).flat().includes(cb.value)); // Выбираем чекбоксы, которые не принадлежат ни к одной из известных групп
+    }
+
+    // Определяем текущее состояние чекбоксов этой группы
+    const allChecked = checkboxes.every(cb => cb.checked);
+
+    // Меняем состояние всех чекбоксов на противоположное
+    checkboxes.forEach(cb => {
+        cb.checked = !allChecked;
+        cb.dispatchEvent(new Event('change')); // Вызываем событие change вручную
+    });
+}
+
 // Функция для создания чекбоксов
 function createCheckboxes(state) {
     const container = document.getElementById('controls');
@@ -2907,7 +2953,7 @@ function onStateChange() {
 
 // Функция для обновления графа
 function updateGraph(filteredData) {
-    console.log("Filtered Data:", filteredData);
+//    console.log("Filtered Data:", filteredData);
     const state = states[selectedIndex];
     let svg = d3.select("#graph-container").select("svg");
     if (!svg.empty()) {
@@ -2925,15 +2971,15 @@ function updateGraph(filteredData) {
         const width = this.clientWidth; // Получаем ширину SVG
         const height = this.clientHeight; // Получаем высоту SVG
 
-        console.log("Width:", width);
-        console.log("Height:", height);
+    //    console.log("Width:", width);
+    //    console.log("Height:", height);
 
     const validEdges = filteredData.edges.filter(edge => {
         const sourceNode = filteredData.nodes.find(node => node.id === edge[0]);
         const targetNode = filteredData.nodes.find(node => node.id === edge[1]);
         return sourceNode && targetNode;
     });
-    console.log("Valid Edges:", validEdges);
+    //console.log("Valid Edges:", validEdges);
 
     const simulation = d3.forceSimulation(filteredData.nodes)
         .force('link', d3.forceLink()
@@ -2990,7 +3036,7 @@ function updateGraph(filteredData) {
         const fullName = currentState.fullNames.find(item => item.id === d.id).fullName;
 
         // Используйте fullName для отображения подсказки или других действий
-        console.log(fullName);
+    //    console.log(fullName);
 
         // Создаем группу для всплывающего окна
         const tooltipGroup = svg.append("g")
@@ -3112,7 +3158,7 @@ function updateGraph(filteredData) {
     
     //    // Обработчик события для кнопки перезапуска
         restartButton.addEventListener('click', function () {
-            console.log('Перезапуск симуляции...');
+        //    console.log('Перезапуск симуляции...');
 
         // Отменяем фиксацию узлов
         let selectedIndex = parseInt(document.getElementById('state-select').value);
@@ -3178,7 +3224,7 @@ document.getElementById('state-select').addEventListener('change', onStateChange
 
 // Обработчик изменения состояния чекбоксов
 function handleCheckboxChange(event) {
-    console.log('Чекбокс изменён!'); // Проверка, что обработчик работает
+    //console.log('Чекбокс изменён!'); // Проверка, что обработчик работает
     selectedRegions = Array.from(
         document.querySelectorAll('#controls input[type="checkbox"]:checked')
     ).map(checkbox => checkbox.value);
