@@ -28,7 +28,7 @@ body {
 
 /* Ограничиваем высоту секции с чекбоксами */
 #controls {
-    max-height: calc(100vh - 323px); /* Установите нужную вам высоту */
+    max-height: calc(100vh - 337px); /* Установите нужную вам высоту */
     max-width: 100%;
     overflow-y: auto; /* Включаем вертикальную прокрутку */
 }
@@ -79,7 +79,7 @@ section {
 #graph-container {
     flex-grow: 1;
     width: 70vw; /* Ширина контейнера равна 70% от ширины экрана */
-    height: calc(100vh - 185px); /* Высота контейнера равна 80% от высоты экрана */
+    height: calc(100vh - 199px); /* Высота контейнера равна 80% от высоты экрана */
     position: relative;
     padding: 20px;
     box-sizing: border-box;
