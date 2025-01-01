@@ -1,13 +1,13 @@
 This is a connectivity diagram of modded and official regions in Rain World for version 1.9. Calling it a map would be a stretch.
 
-How to use:
+How to Use:
 
-The graph represents a schematic of connections between modded and official regions in the game Rain World. 
-The nodes are the regions themselves, labeled with their acronyms, and hovering over them will reveal their full names. 
-Edges (lines connecting two regions) indicate that there is a gate between those two regions (one-way gates are not specifically marked!). 
-You can select the set of represented regions and the state of the world on the side panel, drag nodes using the mouse. 
-The “Restart Simulation” button allows you to position the nodes at a certain distance from each other.
-Buttons with group names allow you to turn on or off all regions within a group simultaneously.
+This graph is a connection scheme for both modded and official regions in the game Rain World. 
+Nodes represent regions and are labeled with their acronyms; hovering over them (or tapping briefly on touchscreens) reveals their full names. 
+Edges (the lines connecting two regions) indicate that there is a gate between these two regions (one-way gates are not specially marked). 
+On the side panel, you can choose which regions to display and adjust the state of the world. 
+Nodes can be dragged with a mouse (or finger on touchscreens), and the "Restart Simulation" button arranges the nodes at a specific distance from one another. 
+Buttons with group names enable you to turn on or off all regions within a group simultaneously.
 
 I made this almost without any programming knowledge, just by using AI and common sense. 
 Therefore, my code is a complete mess, filled with duplicate or non-functional fragments and strange decisions. 
