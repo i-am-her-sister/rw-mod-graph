@@ -3027,51 +3027,82 @@ function updateGraph(filteredData) {
         .attr("dy", 4); // Смещаем текст немного вниз относительно центра узла
 
     // Слушатель события mouseover
-    node.on("mouseover", function(event, d) {
-        // Определяем индекс текущего состояния
-        const selectedIndex = parseInt(stateSelect.value, 10);
-        const currentState = states[selectedIndex];
+node.on("mouseover", function(event, d) {
+    // Определяем индекс текущего состояния
+    const selectedIndex = parseInt(stateSelect.value, 10);
+    const currentState = states[selectedIndex];
 
-        // Находим полное название региона по его id
-        const fullName = currentState.fullNames.find(item => item.id === d.id).fullName;
+    // Находим полное название региона по его id
+    const fullName = currentState.fullNames.find(item => item.id === d.id).fullName;
 
-        // Используйте fullName для отображения подсказки или других действий
-    //    console.log(fullName);
+    // Используем fullName для отображения подсказки или других действий
+    //console.log(fullName);
 
-        // Создаем группу для всплывающего окна
-        const tooltipGroup = svg.append("g")
-            .attr("class", "tooltip-group"); // Класс для группы
+    // Создаем группу для всплывающего окна
+    const tooltipGroup = svg.append("g")
+        .attr("class", "tooltip-group");
 
-        // Создаем текст внутри прямоугольника
-        const tooltipText = tooltipGroup.append("text")
-            .attr("x", d.x + 25) // Смещение вправо от узла
-            .attr("y", d.y + 9) // Смещение вверх от узла
+    // Определяем максимальную ширину текста
+    const maxWidth = window.innerWidth * 0.85; // 85% от ширины окна
+
+    // Разбиваем текст на строки, если он превышает максимальную ширину
+    let lines = [];
+    if (fullName.length > 40) {
+        // Разделяем текст на части длиной до 40 символов
+        for (let i = 0; i < fullName.length; i += 40) {
+            lines.push(fullName.substring(i, Math.min(i + 40, fullName.length)));
+        }
+    } else {
+        lines = [fullName]; // Если текст короткий, то просто используем его целиком
+    }
+    
+    // Предварительно вычисляем предполагаемые размеры текста
+    //const approxTextWidth = Math.max(...lines.map(line => line.length)) * 8; // Предположительная ширина текста (8 пикселей на символ)
+    //const approxTextHeight = lines.length * 16; // Предположительная высота текста (16 пикселей на строку)
+
+    // Корректируем координату x текста, если он выходит за правую границу экрана
+    let textX = d.x + 25;
+    //if (textX + approxTextWidth > screenWidth) {
+    //    textX -= (textX + approxTextWidth - screenWidth);
+    //}
+
+    // Добавляем каждую строку текста
+    const yOffset = 18; // Смещение между строками
+    lines.forEach((line, index) => {
+        tooltipGroup.append("text")
+            .attr("x", textX) // Смещение вправо от узла
+            .attr("y", d.y + 9 + index * yOffset) // Смещение вверх от узла и смещение между строками
             .attr("font-size", "14px")
             .attr("font-weight", "bold")
             .attr("fill", "#333333")
-            .text(fullName);
-
-        // Вычисляем размеры текста
-        const bbox = tooltipText.node().getBBox();
-
-        // Создаем фоновый прямоугольник
-        tooltipGroup.insert("rect", ":first-child") // Вставляем перед текстом
-            .attr("x", bbox.x - 5) // Отступ слева
-            .attr("y", bbox.y - 5) // Отступ сверху
-            .attr("rx", 5) // Скругленные углы
-            .attr("ry", 5)
-            .attr("width", bbox.width + 10) // Ширина с учетом отступов
-            .attr("height", bbox.height + 10) // Высота с учетом отступов
-            .attr("fill", "#ffffff") // Непрозрачный фон
-            .attr("stroke", "#333333") // рамка
-            .attr("stroke-width", 1); // Толщина рамки
+            .text(line);
     });
 
-    // Слушатель события mouseout
-    node.on("mouseout", function(event, d) {
-        // Удаляем всю группу с всплывающим окном
-        svg.select(".tooltip-group").remove();
-    });
+    // Вычисляем реальные размеры текста
+    const bbox = tooltipGroup.node().getBBox();
+
+    // Теперь создаем фоновый прямоугольник относительно реальных координат текста
+    const rectX = textX - 5;
+    const rectY = bbox.y - 5;
+
+    // Создаем фоновый прямоугольник
+    tooltipGroup.insert("rect", ":first-child") // Вставляем перед текстом
+        .attr("x", rectX) // Отступ слева
+        .attr("y", rectY) // Отступ сверху
+        .attr("rx", 5) // Скругленные углы
+        .attr("ry", 5)
+        .attr("width", bbox.width + 10) // Ширина с учетом отступов
+        .attr("height", bbox.height + 10) // Высота с учетом отступов
+        .attr("fill", "#ffffff") // Непрозрачный фон
+        .attr("stroke", "#333333") // Рамка
+        .attr("stroke-width", 1); // Толщина рамки
+});
+
+// Слушатель события mouseout
+node.on("mouseout", function(event, d) {
+    // Удаляем всю группу с всплывающим окном
+    svg.select(".tooltip-group").remove();
+});
 
     let timeoutId = null;
 

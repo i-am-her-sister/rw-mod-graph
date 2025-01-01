@@ -29,7 +29,7 @@ body {
 /* Ограничиваем высоту секции с чекбоксами */
 #controls {
     max-height: calc(100vh - 337px); /* Установите нужную вам высоту */
-    max-width: 100%;
+    max-width: 20vw;
     overflow-y: auto; /* Включаем вертикальную прокрутку */
 }
 
@@ -238,6 +238,7 @@ circle {
 
     #controls {
         max-height: 90vh;
+        max-width: 100%;
     }
 
     #graph-container {
@@ -264,6 +265,7 @@ circle {
 
     #controls {
         max-height: 90vh;
+        max-width: 100%;
     }
 
     #graph-container {
