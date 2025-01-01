@@ -70,7 +70,8 @@ const states = [
             {"id": "VI"},
             {"id": "OS"},
             {"id": "MA"},
-            {"id": "AY"}
+            {"id": "AY"},
+            {"id": "EU"}
         ],
         "fullNames": [
             {"id": "SU", "fullName": "OUTSKIRTS (SU)", "defaultChecked": true},
@@ -141,7 +142,8 @@ const states = [
             {"id": "DC", "fullName": "DRAINAGE CANAL (DC)", "defaultChecked": false},
             {"id": "US", "fullName": "UNDERSEA (US)", "defaultChecked": false},
             {"id": "WM", "fullName": "WASHROOM (WM)", "defaultChecked": false},
-            {"id": "WP", "fullName": "WEAKENED PLATFORM (WP)", "defaultChecked": false}
+            {"id": "WP", "fullName": "WEAKENED PLATFORM (WP)", "defaultChecked": false},
+            {"id": "EU", "fullName": "LUMINOUS COVE (EU)", "defaultChecked": false}
         ],
         "edges": [
             ["SU", "HI"],
@@ -284,14 +286,17 @@ const states = [
             ["OS", "MA"],
             ["OS", "AY"],
             ["AY", "SH"],
-            //["NP", "EU"],
             ["NP", "FR"],
-            ["NP", "GS"]
+            ["NP", "GS"],
+            //["GU", "W1"],
+            ["EU", "NP"],
+            ["EU", "CW"],
+            ["EU", "MF"]
         ],
         "groups": {
             "Official regions": ["SU", "HI", "DS", "GW", "LM", "VS", "SH", "UW", "SS", "CC", "SI", "LF", "SB", "DM", "LC", "OE"],  // Регионы входят в группу Official regions
             "RW: Drought": [],
-            "Sunlit Trail": ["BL", "TM", "SD", "PA", "FR", "MF", "CW", "GU", "NP","GS", "AB"],
+            "Sunlit Trail": ["BL", "TM", "SD", "PA", "FR", "MF", "CW", "GU", "NP","GS", "AB", "EU"],
             "Shrouded Assembly": ["SE", "FO", "LH"],
             "Ols New Horizons": ["FN", "CA", "CF", "ME", "MA", "VI", "OS", "AY"]
         }
@@ -365,7 +370,8 @@ const states = [
             {"id": "VI"},
             {"id": "OS"},
             {"id": "MA"},
-            {"id": "AY"}
+            {"id": "AY"},
+            {"id": "EU"}
         ],
         "fullNames": [
             {"id": "SU", "fullName": "OUTSKIRTS (SU)", "defaultChecked": true},
@@ -435,7 +441,8 @@ const states = [
             {"id": "DC", "fullName": "DRAINAGE CANAL (DC)", "defaultChecked": false},
             {"id": "US", "fullName": "UNDERSEA (US)", "defaultChecked": false},
             {"id": "WM", "fullName": "WASHROOM (WM)", "defaultChecked": false},
-            {"id": "WP", "fullName": "WEAKENED PLATFORM (WP)", "defaultChecked": false}
+            {"id": "WP", "fullName": "WEAKENED PLATFORM (WP)", "defaultChecked": false},
+            {"id": "EU", "fullName": "LUMINOUS COVE (EU)", "defaultChecked": false}
         ],
         "edges": [
             ["SU", "HI"],
@@ -577,14 +584,17 @@ const states = [
             ["OS", "MA"],
             ["OS", "AY"],
             ["AY", "SH"],
-            //["NP", "EU"],
             ["NP", "FR"],
-            ["NP", "GS"]
+            ["NP", "GS"],
+            //["GU", "W1"],
+            ["EU", "NP"],
+            ["EU", "CW"],
+            ["EU", "MF"]
         ],
         "groups": {
             "Official regions": ["SU", "HI", "DS", "GW", "LM", "VS", "SH", "UW", "SS", "CC", "SI", "LF", "SB", "LC", "OE"],  // Регионы SU и HI входят в группу Group C
             "RW: Drought": [],
-            "Sunlit Trail": ["BL", "TM", "SD", "PA", "FR", "MF", "CW", "GU", "NP","GS", "AB"],
+            "Sunlit Trail": ["BL", "TM", "SD", "PA", "FR", "MF", "CW", "GU", "NP","GS", "AB", "EU"],
             "Shrouded Assembly": ["SE", "FO", "LH"],
             "Ols New Horizons": ["FN", "CA", "CF", "ME", "MA", "VI", "OS", "AY"]
         }
@@ -661,7 +671,8 @@ const states = [
             {"id": "VI"},
             {"id": "OS"},
             {"id": "MA"},
-            {"id": "AY"}
+            {"id": "AY"},
+            {"id": "EU"}
         ],
         "fullNames": [
             {"id": "SU", "fullName": "OUTSKIRTS (SU)", "defaultChecked": true},
@@ -733,7 +744,8 @@ const states = [
             {"id": "DC", "fullName": "DRAINAGE CANAL (DC)", "defaultChecked": false},
             {"id": "US", "fullName": "UNDERSEA (US)", "defaultChecked": false},
             {"id": "WM", "fullName": "WASHROOM (WM)", "defaultChecked": false},
-            {"id": "WP", "fullName": "WEAKENED PLATFORM (WP)", "defaultChecked": false}
+            {"id": "WP", "fullName": "WEAKENED PLATFORM (WP)", "defaultChecked": false},
+            {"id": "EU", "fullName": "LUMINOUS COVE (EU)", "defaultChecked": false}
         ],
         "edges": [
             ["SU", "HI"],
@@ -880,14 +892,17 @@ const states = [
             ["OS", "MA"],
             ["OS", "AY"],
             ["AY", "SH"],
-            //["NP", "EU"],
             ["NP", "FR"],
-            ["NP", "GS"]
+            ["NP", "GS"],
+            //["GU", "W1"],
+            ["EU", "NP"],
+            ["EU", "CW"],
+            ["EU", "MF"]
         ],
         "groups": {
             "Official regions": ["SU", "HI", "DS", "GW", "SL", "VS", "SH", "UW", "SS", "CC", "SI", "LF", "SB", "MS", "LC", "OE"],
             "RW: Drought": [],
-            "Sunlit Trail": ["BL", "TM", "SD", "PA", "FR", "MF", "CW", "GU", "NP","GS", "AB"],
+            "Sunlit Trail": ["BL", "TM", "SD", "PA", "FR", "MF", "CW", "GU", "NP","GS", "AB", "EU"],
             "Shrouded Assembly": ["SE", "FO", "LH"],
             "Ols New Horizons": ["FN", "CA", "CF", "ME", "MA", "VI", "OS", "AY"]
         }
@@ -964,7 +979,8 @@ const states = [
             {"id": "VI"},
             {"id": "OS"},
             {"id": "MA"},
-            {"id": "AY"}
+            {"id": "AY"},
+            {"id": "EU"}
         ],
         "fullNames": [
             {"id": "SU", "fullName": "OUTSKIRTS (SU)", "defaultChecked": true},
@@ -1036,7 +1052,8 @@ const states = [
             {"id": "DC", "fullName": "DRAINAGE CANAL (DC)", "defaultChecked": false},
             {"id": "US", "fullName": "UNDERSEA (US)", "defaultChecked": false},
             {"id": "WM", "fullName": "WASHROOM (WM)", "defaultChecked": false},
-            {"id": "WP", "fullName": "WEAKENED PLATFORM (WP)", "defaultChecked": false}
+            {"id": "WP", "fullName": "WEAKENED PLATFORM (WP)", "defaultChecked": false},
+            {"id": "EU", "fullName": "LUMINOUS COVE (EU)", "defaultChecked": false}
         ],
         "edges": [
             ["SU", "HI"],
@@ -1186,14 +1203,17 @@ const states = [
             ["OS", "AY"],
             ["AY", "SH"],
             ["FN", "OE"],
-            //["NP", "EU"],
             ["NP", "FR"],
-            ["NP", "GS"]
+            ["NP", "GS"],
+            //["GU", "W1"],
+            ["EU", "NP"],
+            ["EU", "CW"],
+            ["EU", "MF"]
         ],
         "groups": {
             "Official regions": ["SU", "HI", "DS", "GW", "SL", "VS", "SH", "UW", "SS", "CC", "SI", "LF", "SB", "MS", "LC", "OE"],
             "RW: Drought": [],
-            "Sunlit Trail": ["BL", "TM", "SD", "PA", "FR", "MF", "CW", "GU", "NP","GS", "AB"],
+            "Sunlit Trail": ["BL", "TM", "SD", "PA", "FR", "MF", "CW", "GU", "NP","GS", "AB", "EU"],
             "Shrouded Assembly": ["SE", "FO", "LH"],
             "Ols New Horizons": ["FN", "CA", "CF", "ME", "MA", "VI", "OS", "AY"]
         }
@@ -1272,7 +1292,8 @@ const states = [
             {"id": "VI"},
             {"id": "OS"},
             {"id": "MA"},
-            {"id": "AY"}
+            {"id": "AY"},
+            {"id": "EU"}
         ],
         "fullNames": [
             {"id": "SU", "fullName": "OUTSKIRTS (SU)", "defaultChecked": true},
@@ -1346,7 +1367,8 @@ const states = [
             {"id": "DC", "fullName": "DRAINAGE CANAL (DC)", "defaultChecked": false},
             {"id": "US", "fullName": "UNDERSEA (US)", "defaultChecked": false},
             {"id": "WM", "fullName": "WASHROOM (WM)", "defaultChecked": false},
-            {"id": "WP", "fullName": "WEAKENED PLATFORM (WP)", "defaultChecked": false}
+            {"id": "WP", "fullName": "WEAKENED PLATFORM (WP)", "defaultChecked": false},
+            {"id": "EU", "fullName": "LUMINOUS COVE (EU)", "defaultChecked": false}
         ],
         "edges": [
             ["SU", "HI"],
@@ -1499,14 +1521,17 @@ const states = [
             ["SK", "SL"],
             ["SK", "RF"],
             ["SK", "SEC"],
-            //["NP", "EU"],
             ["NP", "FR"],
-            ["NP", "GS"]
+            ["NP", "GS"],
+            //["GU", "W1"],
+            ["EU", "NP"],
+            ["EU", "CW"],
+            ["EU", "MF"]
         ],
         "groups": {
             "Official regions": ["SU", "HI", "DS", "GW", "SL", "VS", "SH", "UW", "SS", "CC", "SI", "LF", "SB", "MS", "LC", "OE"],
             "RW: Drought": [],
-            "Sunlit Trail": ["BL", "TM", "SD", "PA", "FR", "MF", "CW", "GU", "NP","GS", "AB"],
+            "Sunlit Trail": ["BL", "TM", "SD", "PA", "FR", "MF", "CW", "GU", "NP","GS", "AB", "EU"],
             "Shrouded Assembly": ["SE", "FO", "LH"],
             "Ols New Horizons": ["FN", "CA", "CF", "ME", "MA", "VI", "OS", "AY"]
         }
@@ -1585,7 +1610,8 @@ const states = [
             {"id": "VI"},
             {"id": "OS"},
             {"id": "MA"},
-            {"id": "AY"}
+            {"id": "AY"},
+            {"id": "EU"}
         ],
         "fullNames": [
             {"id": "SU", "fullName": "OUTSKIRTS (SU)", "defaultChecked": true},
@@ -1659,7 +1685,8 @@ const states = [
             {"id": "DC", "fullName": "DRAINAGE CANAL (DC)", "defaultChecked": false},
             {"id": "US", "fullName": "UNDERSEA (US)", "defaultChecked": false},
             {"id": "WM", "fullName": "WASHROOM (WM)", "defaultChecked": false},
-            {"id": "WP", "fullName": "WEAKENED PLATFORM (WP)", "defaultChecked": false}
+            {"id": "WP", "fullName": "WEAKENED PLATFORM (WP)", "defaultChecked": false},
+            {"id": "EU", "fullName": "LUMINOUS COVE (EU)", "defaultChecked": false}
         ],
         "edges": [
             ["SU", "HI"],
@@ -1812,14 +1839,17 @@ const states = [
             ["OS", "MA"],
             ["OS", "AY"],
             ["AY", "SH"],
-            //["NP", "EU"],
             ["NP", "FR"],
-            ["NP", "GS"]
+            ["NP", "GS"],
+            //["GU", "W1"],
+            ["EU", "NP"],
+            ["EU", "CW"],
+            ["EU", "MF"]
         ],
         "groups": {
             "Official regions": ["SU", "HI", "DS", "GW", "SL", "VS", "SH", "UW", "SS", "CC", "SI", "LF", "SB", "MS", "LC", "OE"],
             "RW: Drought": [],
-            "Sunlit Trail": ["BL", "TM", "SD", "PA", "FR", "MF", "CW", "GU", "NP","GS", "AB"],
+            "Sunlit Trail": ["BL", "TM", "SD", "PA", "FR", "MF", "CW", "GU", "NP","GS", "AB", "EU"],
             "Shrouded Assembly": ["SE", "FO", "LH"],
             "Ols New Horizons": ["FN", "CA", "CF", "ME", "MA", "VI", "OS", "AY"]
         }
@@ -1895,7 +1925,8 @@ const states = [
             {"id": "VI"},
             {"id": "OS"},
             {"id": "MA"},
-            {"id": "AY"}
+            {"id": "AY"},
+            {"id": "EU"}
         ],
         "fullNames": [
             {"id": "SU", "fullName": "OUTSKIRTS (SU)", "defaultChecked": true},
@@ -1966,7 +1997,8 @@ const states = [
             {"id": "DC", "fullName": "DRAINAGE CANAL (DC)", "defaultChecked": false},
             {"id": "US", "fullName": "UNDERSEA (US)", "defaultChecked": false},
             {"id": "WM", "fullName": "WASHROOM (WM)", "defaultChecked": false},
-            {"id": "WP", "fullName": "WEAKENED PLATFORM (WP)", "defaultChecked": false}
+            {"id": "WP", "fullName": "WEAKENED PLATFORM (WP)", "defaultChecked": false},
+            {"id": "EU", "fullName": "LUMINOUS COVE (EU)", "defaultChecked": false}
         ],
         "edges": [
             ["SU", "HI"],
@@ -2109,14 +2141,17 @@ const states = [
             ["OS", "MA"],
             ["OS", "AY"],
             ["AY", "SH"],
-            //["NP", "EU"],
             ["NP", "FR"],
-            ["NP", "GS"]
+            ["NP", "GS"],
+            //["GU", "W1"],
+            ["EU", "NP"],
+            ["EU", "CW"],
+            ["EU", "MF"]
         ],
         "groups": {
             "Official regions": ["SU", "HI", "DS", "GW", "SL", "VS", "SH", "UW", "RM", "CC", "SI", "LF", "SB", "MS", "LC", "OE"],
             "RW: Drought": [],
-            "Sunlit Trail": ["BL", "TM", "SD", "PA", "FR", "MF", "CW", "GU", "NP","GS", "AB"],
+            "Sunlit Trail": ["BL", "TM", "SD", "PA", "FR", "MF", "CW", "GU", "NP","GS", "AB", "EU"],
             "Shrouded Assembly": ["SE", "FO", "LH"],
             "Ols New Horizons": ["FN", "CA", "CF", "ME", "MA", "VI", "OS", "AY"]
         }
@@ -2402,7 +2437,8 @@ const states = [
             {"id": "OS"},
             {"id": "DI"},
             {"id": "SW"},
-            {"id": "AY"}
+            {"id": "AY"},
+            {"id": "EU"}
         ],
         "fullNames": [
             {"id": "SU", "fullName": "WE FORGOT TO RENDER THIS ONE SORRY // OUTSKIRTS (SU)", "defaultChecked": true},
@@ -2474,7 +2510,8 @@ const states = [
             {"id": "DC", "fullName": "DRAINAGE CANAL (DC)", "defaultChecked": false},
             {"id": "US", "fullName": "UNDERSEA (US)", "defaultChecked": false},
             {"id": "WM", "fullName": "WASHROOM (WM)", "defaultChecked": false},
-            {"id": "WP", "fullName": "WEAKENED PLATFORM (WP)", "defaultChecked": false}
+            {"id": "WP", "fullName": "WEAKENED PLATFORM (WP)", "defaultChecked": false},
+            {"id": "EU", "fullName": "LUMINOUS COVE (EU)", "defaultChecked": false}
         ],
         "edges": [
             ["SU", "HI"],
@@ -2625,14 +2662,17 @@ const states = [
             ["SW", "CC"],
             ["AY", "UW"],
             ["AY", "SH"],
-            //["NP", "EU"],
             ["NP", "FR"],
-            ["NP", "GS"]
+            ["NP", "GS"],
+            //["GU", "W1"],
+            ["EU", "NP"],
+            ["EU", "CW"],
+            ["EU", "MF"]
         ],
         "groups": {
             "Official regions": ["SU", "HI", "DS", "GW", "SL", "VS", "SH", "UW", "SS", "CC", "SI", "LF", "SB", "MS", "LC", "OE"],
             "RW: Drought": [],
-            "Sunlit Trail": ["BL", "TM", "SD", "PA", "FR", "MF", "CW", "GU", "NP","GS", "AB"],
+            "Sunlit Trail": ["BL", "TM", "SD", "PA", "FR", "MF", "CW", "GU", "NP","GS", "AB", "EU"],
             "Shrouded Assembly": ["SE", "FO", "LH"],
             "Ols New Horizons": ["FN", "CA", "CF", "ME", "VI", "OS", "DI", "SW", "AY"]
         }
@@ -2724,49 +2764,49 @@ const groups = {
     "Spearmaster": {
         'Official regions': ["SU", "HI", "DS", "GW", "LM", "VS", "SH", "UW", "SS", "CC", "SI", "LF", "SB", "DM", "LC", "OE"],
         'RW: Drought': [],
-        'Sunlit Trail': ["BL", "TM", "SD", "PA", "FR", "MF", "CW", "GU", "NP","GS", "AB"],
+        'Sunlit Trail': ["BL", "TM", "SD", "PA", "FR", "MF", "CW", "GU", "NP","GS", "AB", "EU"],
         'Shrouded Assembly': ["SE", "FO", "LH"],
         'Ols New Horizons': ["FN", "CA", "CF", "ME", "MA", "VI", "OS", "AY"]
     },
     "Artificer": {
         'Official regions': ["SU", "HI", "DS", "GW", "LM", "VS", "SH", "UW", "SS", "CC", "SI", "LF", "SB", "LC", "OE"],
         'RW: Drought': [],
-        'Sunlit Trail': ["BL", "TM", "SD", "PA", "FR", "MF", "CW", "GU", "NP","GS", "AB"],
+        'Sunlit Trail': ["BL", "TM", "SD", "PA", "FR", "MF", "CW", "GU", "NP","GS", "AB", "EU"],
         'Shrouded Assembly': ["SE", "FO", "LH"],
         'Ols New Horizons': ["FN", "CA", "CF", "ME", "MA", "VI", "OS", "AY"]
     },
     "Hunter": {
         'Official regions': ["SU", "HI", "DS", "GW", "SL", "VS", "SH", "UW", "SS", "CC", "SI", "LF", "SB", "MS", "LC", "OE"],
         'RW: Drought': [],
-        'Sunlit Trail': ["BL", "TM", "SD", "PA", "FR", "MF", "CW", "GU", "NP","GS", "AB"],
+        'Sunlit Trail': ["BL", "TM", "SD", "PA", "FR", "MF", "CW", "GU", "NP","GS", "AB", "EU"],
         'Shrouded Assembly': ["SE", "FO", "LH"],
         'Ols New Horizons': ["FN", "CA", "CF", "ME", "MA", "VI", "OS", "AY"]
     },
     "Gourmand": {
         'Official regions': ["SU", "HI", "DS", "GW", "SL", "VS", "SH", "UW", "SS", "CC", "SI", "LF", "SB", "MS", "LC", "OE"],
         'RW: Drought': [],
-        'Sunlit Trail': ["BL", "TM", "SD", "PA", "FR", "MF", "CW", "GU", "NP","GS", "AB"],
+        'Sunlit Trail': ["BL", "TM", "SD", "PA", "FR", "MF", "CW", "GU", "NP","GS", "AB", "EU"],
         'Shrouded Assembly': ["SE", "FO", "LH"],
         'Ols New Horizons': ["FN", "CA", "CF", "ME", "MA", "VI", "OS", "AY"]
     },
     "Survivor": {
         'Official regions': ["SU", "HI", "DS", "GW", "SL", "VS", "SH", "UW", "SS", "CC", "SI", "LF", "SB", "MS", "LC", "OE"],
         'RW: Drought': [],
-        'Sunlit Trail': ["BL", "TM", "SD", "PA", "FR", "MF", "CW", "GU", "NP","GS", "AB"],
+        'Sunlit Trail': ["BL", "TM", "SD", "PA", "FR", "MF", "CW", "GU", "NP","GS", "AB", "EU"],
         'Shrouded Assembly': ["SE", "FO", "LH"],
         'Ols New Horizons': ["FN", "CA", "CF", "ME", "MA", "VI", "OS", "AY"]
     },
     "Monk": {
         'Official regions': ["SU", "HI", "DS", "GW", "SL", "VS", "SH", "UW", "SS", "CC", "SI", "LF", "SB", "MS", "LC", "OE"],
         'RW: Drought': [],
-        'Sunlit Trail': ["BL", "TM", "SD", "PA", "FR", "MF", "CW", "GU", "NP","GS", "AB"],
+        'Sunlit Trail': ["BL", "TM", "SD", "PA", "FR", "MF", "CW", "GU", "NP","GS", "AB", "EU"],
         'Shrouded Assembly': ["SE", "FO", "LH"],
         'Ols New Horizons': ["FN", "CA", "CF", "ME", "MA", "VI", "OS", "AY"]
     },
     "Rivulet": {
         'Official regions': ["SU", "HI", "DS", "GW", "SL", "VS", "SH", "UW", "RM", "CC", "SI", "LF", "SB", "MS", "LC", "OE"],
         'RW: Drought': [],
-        'Sunlit Trail': ["BL", "TM", "SD", "PA", "FR", "MF", "CW", "GU", "NP","GS", "AB"],
+        'Sunlit Trail': ["BL", "TM", "SD", "PA", "FR", "MF", "CW", "GU", "NP","GS", "AB", "EU"],
         'Shrouded Assembly': ["SE", "FO", "LH"],
         'Ols New Horizons': ["FN", "CA", "CF", "ME", "MA", "VI", "OS", "AY"]
     },
@@ -2780,7 +2820,7 @@ const groups = {
     "Inv": {
         'Official regions': ["SU", "HI", "DS", "GW", "SL", "VS", "SH", "UW", "SS", "CC", "SI", "LF", "SB", "MS", "LC", "OE"],
         'RW: Drought': [],
-        'Sunlit Trail': ["BL", "TM", "SD", "PA", "FR", "MF", "CW", "GU", "NP","GS", "AB"],
+        'Sunlit Trail': ["BL", "TM", "SD", "PA", "FR", "MF", "CW", "GU", "NP","GS", "AB", "EU"],
         'Shrouded Assembly': ["SE", "FO", "LH"],
         'Ols New Horizons': ["FN", "CA", "CF", "ME", "VI", "OS", "DI", "SW", "AY"]
     },
