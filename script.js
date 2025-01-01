@@ -2862,7 +2862,7 @@ function createCheckboxes(state) {
                 label.style.backgroundColor = '#444444'; // Исходный цвет
             } else {
                 label.style.backgroundColor = '#444444'; // Исходный цвет
-                label.style.color = '#ffffff'; // Бежевый текст
+                label.style.color = '#ffce73'; // Бежевый текст
             }
         });
 
