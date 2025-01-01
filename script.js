@@ -1478,7 +1478,10 @@ const states = [
             ["VI", "MA"],
             ["OS", "MA"],
             ["OS", "AY"],
-            ["AY", "SH"]
+            ["AY", "SH"],
+            ["SK", "SL"],
+            ["SK", "RF"],
+            ["SK", "SEC"]
         ],
         "groups": {
             "Official regions": ["SU", "HI", "DS", "GW", "SL", "VS", "SH", "UW", "SS", "CC", "SI", "LF", "SB", "MS", "LC", "OE"],
