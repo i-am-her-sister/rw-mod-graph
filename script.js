@@ -2864,6 +2864,29 @@ const legendMap = {
 };
 
 document.addEventListener('DOMContentLoaded', function() {
+    // Получаем элементы
+    const howToUseButton = document.getElementById('how-to-use');
+    const popup = document.getElementById('popup');
+    const closeButton = popup.querySelector('.close-button');
+
+    // Функция для управления состоянием попапа
+    function togglePopup() {
+        if (popup.style.display === 'block') { // Если попап уже показан
+            popup.style.display = 'none';      // Скрыть его
+        } else {                                // Иначе
+            popup.style.display = 'block';      // Показать попап
+        }
+    }
+
+    // Обработчик клика на кнопку "How to use"
+    howToUseButton.addEventListener('click', togglePopup);
+
+    // Обработчик клика на крестик для закрытия попапа
+    closeButton.addEventListener('click', togglePopup); // Используем ту же функцию
+});
+
+
+document.addEventListener('DOMContentLoaded', function() {
     // Находим все элементы легенды
     const legendItems = document.querySelectorAll('#legend li');
 
