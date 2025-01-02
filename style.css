@@ -273,6 +273,10 @@ circle {
         color: #fff;
     }
 
+    #popup {
+        width: 90vw;
+    }
+
     #restart-simulation {
         position: static;
         bottom: 20px;
