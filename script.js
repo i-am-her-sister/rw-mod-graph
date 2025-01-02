@@ -99,6 +99,7 @@ const states = [
             {"id": "CW", "fullName": "CHASING WIND (CW)", "defaultChecked": false},
             {"id": "GU", "fullName": "GRAY URBAN (GU)", "defaultChecked": false},
             {"id": "NP", "fullName": "NECROPOLIS (NP)", "defaultChecked": false},
+            {"id": "EU", "fullName": "LUMINOUS COVE (EU)", "defaultChecked": false},
             {"id": "GS", "fullName": "GILDED SANCTUARY (GS)", "defaultChecked": false},
             {"id": "AB", "fullName": "ARID BARRENS (AB)", "defaultChecked": false},
             {"id": "SE", "fullName": "STEAMING EDIFICE (SE)", "defaultChecked": false},
@@ -142,8 +143,7 @@ const states = [
             {"id": "DC", "fullName": "DRAINAGE CANAL (DC)", "defaultChecked": false},
             {"id": "US", "fullName": "UNDERSEA (US)", "defaultChecked": false},
             {"id": "WM", "fullName": "WASHROOM (WM)", "defaultChecked": false},
-            {"id": "WP", "fullName": "WEAKENED PLATFORM (WP)", "defaultChecked": false},
-            {"id": "EU", "fullName": "LUMINOUS COVE (EU)", "defaultChecked": false}
+            {"id": "WP", "fullName": "WEAKENED PLATFORM (WP)", "defaultChecked": false}
         ],
         "edges": [
             ["SU", "HI"],
@@ -398,6 +398,7 @@ const states = [
             {"id": "CW", "fullName": "CHASING WIND (CW)", "defaultChecked": false},
             {"id": "GU", "fullName": "GRAY URBAN (GU)", "defaultChecked": false},
             {"id": "NP", "fullName": "NECROPOLIS (NP)", "defaultChecked": false},
+            {"id": "EU", "fullName": "LUMINOUS COVE (EU)", "defaultChecked": false},
             {"id": "GS", "fullName": "GILDED SANCTUARY (GS)", "defaultChecked": false},
             {"id": "AB", "fullName": "ARID BARRENS (AB)", "defaultChecked": false},
             {"id": "SE", "fullName": "STEAMING EDIFICE (SE)", "defaultChecked": false},
@@ -441,8 +442,7 @@ const states = [
             {"id": "DC", "fullName": "DRAINAGE CANAL (DC)", "defaultChecked": false},
             {"id": "US", "fullName": "UNDERSEA (US)", "defaultChecked": false},
             {"id": "WM", "fullName": "WASHROOM (WM)", "defaultChecked": false},
-            {"id": "WP", "fullName": "WEAKENED PLATFORM (WP)", "defaultChecked": false},
-            {"id": "EU", "fullName": "LUMINOUS COVE (EU)", "defaultChecked": false}
+            {"id": "WP", "fullName": "WEAKENED PLATFORM (WP)", "defaultChecked": false}
         ],
         "edges": [
             ["SU", "HI"],
@@ -700,6 +700,7 @@ const states = [
             {"id": "CW", "fullName": "CHASING WIND (CW)", "defaultChecked": false},
             {"id": "GU", "fullName": "GRAY URBAN (GU)", "defaultChecked": false},
             {"id": "NP", "fullName": "NECROPOLIS (NP)", "defaultChecked": false},
+            {"id": "EU", "fullName": "LUMINOUS COVE (EU)", "defaultChecked": false},
             {"id": "GS", "fullName": "GILDED SANCTUARY (GS)", "defaultChecked": false},
             {"id": "AB", "fullName": "ARID BARRENS (AB)", "defaultChecked": false},
             {"id": "SE", "fullName": "STEAMING EDIFICE (SE)", "defaultChecked": false},
@@ -744,8 +745,7 @@ const states = [
             {"id": "DC", "fullName": "DRAINAGE CANAL (DC)", "defaultChecked": false},
             {"id": "US", "fullName": "UNDERSEA (US)", "defaultChecked": false},
             {"id": "WM", "fullName": "WASHROOM (WM)", "defaultChecked": false},
-            {"id": "WP", "fullName": "WEAKENED PLATFORM (WP)", "defaultChecked": false},
-            {"id": "EU", "fullName": "LUMINOUS COVE (EU)", "defaultChecked": false}
+            {"id": "WP", "fullName": "WEAKENED PLATFORM (WP)", "defaultChecked": false}
         ],
         "edges": [
             ["SU", "HI"],
@@ -1008,6 +1008,7 @@ const states = [
             {"id": "CW", "fullName": "CHASING WIND (CW)", "defaultChecked": false},
             {"id": "GU", "fullName": "GRAY URBAN (GU)", "defaultChecked": false},
             {"id": "NP", "fullName": "NECROPOLIS (NP)", "defaultChecked": false},
+            {"id": "EU", "fullName": "LUMINOUS COVE (EU)", "defaultChecked": false},
             {"id": "GS", "fullName": "GILDED SANCTUARY (GS)", "defaultChecked": false},
             {"id": "AB", "fullName": "ARID BARRENS (AB)", "defaultChecked": false},
             {"id": "SE", "fullName": "STEAMING EDIFICE (SE)", "defaultChecked": false},
@@ -1052,8 +1053,7 @@ const states = [
             {"id": "DC", "fullName": "DRAINAGE CANAL (DC)", "defaultChecked": false},
             {"id": "US", "fullName": "UNDERSEA (US)", "defaultChecked": false},
             {"id": "WM", "fullName": "WASHROOM (WM)", "defaultChecked": false},
-            {"id": "WP", "fullName": "WEAKENED PLATFORM (WP)", "defaultChecked": false},
-            {"id": "EU", "fullName": "LUMINOUS COVE (EU)", "defaultChecked": false}
+            {"id": "WP", "fullName": "WEAKENED PLATFORM (WP)", "defaultChecked": false}
         ],
         "edges": [
             ["SU", "HI"],
@@ -1321,6 +1321,7 @@ const states = [
             {"id": "CW", "fullName": "CHASING WIND (CW)", "defaultChecked": false},
             {"id": "GU", "fullName": "GRAY URBAN (GU)", "defaultChecked": false},
             {"id": "NP", "fullName": "NECROPOLIS (NP)", "defaultChecked": false},
+            {"id": "EU", "fullName": "LUMINOUS COVE (EU)", "defaultChecked": false},
             {"id": "GS", "fullName": "GILDED SANCTUARY (GS)", "defaultChecked": false},
             {"id": "AB", "fullName": "ARID BARRENS (AB)", "defaultChecked": false},
             {"id": "SE", "fullName": "STEAMING EDIFICE (SE)", "defaultChecked": false},
@@ -1367,8 +1368,7 @@ const states = [
             {"id": "DC", "fullName": "DRAINAGE CANAL (DC)", "defaultChecked": false},
             {"id": "US", "fullName": "UNDERSEA (US)", "defaultChecked": false},
             {"id": "WM", "fullName": "WASHROOM (WM)", "defaultChecked": false},
-            {"id": "WP", "fullName": "WEAKENED PLATFORM (WP)", "defaultChecked": false},
-            {"id": "EU", "fullName": "LUMINOUS COVE (EU)", "defaultChecked": false}
+            {"id": "WP", "fullName": "WEAKENED PLATFORM (WP)", "defaultChecked": false}
         ],
         "edges": [
             ["SU", "HI"],
@@ -1639,6 +1639,7 @@ const states = [
             {"id": "CW", "fullName": "CHASING WIND (CW)", "defaultChecked": false},
             {"id": "GU", "fullName": "GRAY URBAN (GU)", "defaultChecked": false},
             {"id": "NP", "fullName": "NECROPOLIS (NP)", "defaultChecked": false},
+            {"id": "EU", "fullName": "LUMINOUS COVE (EU)", "defaultChecked": false},
             {"id": "GS", "fullName": "GILDED SANCTUARY (GS)", "defaultChecked": false},
             {"id": "AB", "fullName": "ARID BARRENS (AB)", "defaultChecked": false},
             {"id": "SE", "fullName": "STEAMING EDIFICE (SE)", "defaultChecked": false},
@@ -1685,8 +1686,7 @@ const states = [
             {"id": "DC", "fullName": "DRAINAGE CANAL (DC)", "defaultChecked": false},
             {"id": "US", "fullName": "UNDERSEA (US)", "defaultChecked": false},
             {"id": "WM", "fullName": "WASHROOM (WM)", "defaultChecked": false},
-            {"id": "WP", "fullName": "WEAKENED PLATFORM (WP)", "defaultChecked": false},
-            {"id": "EU", "fullName": "LUMINOUS COVE (EU)", "defaultChecked": false}
+            {"id": "WP", "fullName": "WEAKENED PLATFORM (WP)", "defaultChecked": false}
         ],
         "edges": [
             ["SU", "HI"],
@@ -1954,6 +1954,7 @@ const states = [
             {"id": "CW", "fullName": "CHASING WIND (CW)", "defaultChecked": false},
             {"id": "GU", "fullName": "GRAY URBAN (GU)", "defaultChecked": false},
             {"id": "NP", "fullName": "NECROPOLIS (NP)", "defaultChecked": false},
+            {"id": "EU", "fullName": "LUMINOUS COVE (EU)", "defaultChecked": false},
             {"id": "GS", "fullName": "GILDED SANCTUARY (GS)", "defaultChecked": false},
             {"id": "AB", "fullName": "ARID BARRENS (AB)", "defaultChecked": false},
             {"id": "SE", "fullName": "STEAMING EDIFICE (SE)", "defaultChecked": false},
@@ -1997,8 +1998,7 @@ const states = [
             {"id": "DC", "fullName": "DRAINAGE CANAL (DC)", "defaultChecked": false},
             {"id": "US", "fullName": "UNDERSEA (US)", "defaultChecked": false},
             {"id": "WM", "fullName": "WASHROOM (WM)", "defaultChecked": false},
-            {"id": "WP", "fullName": "WEAKENED PLATFORM (WP)", "defaultChecked": false},
-            {"id": "EU", "fullName": "LUMINOUS COVE (EU)", "defaultChecked": false}
+            {"id": "WP", "fullName": "WEAKENED PLATFORM (WP)", "defaultChecked": false}
         ],
         "edges": [
             ["SU", "HI"],
@@ -2466,6 +2466,7 @@ const states = [
             {"id": "CW", "fullName": "CHASING WIND (CW)", "defaultChecked": false},
             {"id": "GU", "fullName": "GRAY URBAN (GU)", "defaultChecked": false},
             {"id": "NP", "fullName": "NECROPOLIS (NP)", "defaultChecked": false},
+            {"id": "EU", "fullName": "LUMINOUS COVE (EU)", "defaultChecked": false},
             {"id": "GS", "fullName": "GILDED SANCTUARY (GS)", "defaultChecked": false},
             {"id": "AB", "fullName": "MIROS WORLD // ARID BARRENS (AB)", "defaultChecked": false},
             {"id": "SE", "fullName": "STEAMING EDIFICE (SE)", "defaultChecked": false},
@@ -2510,8 +2511,7 @@ const states = [
             {"id": "DC", "fullName": "DRAINAGE CANAL (DC)", "defaultChecked": false},
             {"id": "US", "fullName": "UNDERSEA (US)", "defaultChecked": false},
             {"id": "WM", "fullName": "WASHROOM (WM)", "defaultChecked": false},
-            {"id": "WP", "fullName": "WEAKENED PLATFORM (WP)", "defaultChecked": false},
-            {"id": "EU", "fullName": "LUMINOUS COVE (EU)", "defaultChecked": false}
+            {"id": "WP", "fullName": "WEAKENED PLATFORM (WP)", "defaultChecked": false}
         ],
         "edges": [
             ["SU", "HI"],
