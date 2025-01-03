@@ -2167,7 +2167,7 @@ const states = [
             {"id": "MS"},
             {"id": "OE"},
             {"id": "BL"},
-            {"id": "TM"},
+            {"id": "XM"},
             {"id": "FR"},
             {"id": "GS"},
             {"id": "AB"},
@@ -2218,7 +2218,7 @@ const states = [
             {"id": "MS", "fullName": "SUBMERGED SUPERSTRUCTURE (MS)", "defaultChecked": true},
             {"id": "OE", "fullName": "OUTER EXPANSE (OE)", "defaultChecked": true},
             {"id": "BL", "fullName": "ARCHAIC TUNDRA // BADLANDS (BL)", "defaultChecked": false},
-            {"id": "TM", "fullName": "ASHEN MONOLITH // THE MAST (TM)", "defaultChecked": false},
+            {"id": "XM", "fullName": "ASHEN MONOLITH // THE MAST (XM)", "defaultChecked": false},
             {"id": "FR", "fullName": "LOST STRAND // FAR SHORE (FR)", "defaultChecked": false},
             {"id": "GS", "fullName": "GILDED SANCTUARY (GS)", "defaultChecked": false},
             {"id": "AB", "fullName": "FRIGID DESERT // ARID BARRENS (AB)", "defaultChecked": false},
@@ -2278,9 +2278,9 @@ const states = [
             ["SB", "HR"],
             ["BL", "GW"],
             ["BL", "LF"],
-            ["BL", "TM"],
-            ["TM", "SI"],
-            ["TM", "SB"],
+            ["BL", "XM"],
+            ["XM", "SI"],
+            ["XM", "SB"],
             ["FR", "GW"],
             ["FR", "MS"],
             ["FR", "SB"],
@@ -2342,7 +2342,7 @@ const states = [
             ["TX", "DC"],
             //["TX", "VX"],
             ["US", "SL"],
-            ["US", "TM"],
+            ["US", "XM"],
             ["WM", "SU"],
             ["WP", "SI"],
             ["WP", "LF"],
@@ -2352,7 +2352,7 @@ const states = [
         "groups": {
             "Official regions": ["SU", "HI", "UG", "GW", "SL", "VS", "CL", "CC", "SI", "LF", "SB", "MS", "OE", "HR"],
             "RW: Drought": [],
-            "Sunlit Trail": ["BL", "TM", "FR","GS", "AB"],
+            "Sunlit Trail": ["BL", "XM", "FR","GS", "AB"],
             "Shrouded Assembly": ["SE"],
             "Ols New Horizons": ["FN", "VU"]
         }
@@ -2804,7 +2804,7 @@ const groups = {
     "Saint": {
         'Official regions': ["SU", "HI", "UG", "GW", "SL", "VS", "CL", "CC", "SI", "LF", "SB", "MS", "OE", "HR"],
         'RW: Drought': [],
-        'Sunlit Trail': ["BL", "TM", "FR","GS", "AB"],
+        'Sunlit Trail': ["BL", "XM", "FR","GS", "AB"],
         'Shrouded Assembly': ["SE"],
         'Ols New Horizons': ["FN", "VU"]
     },
