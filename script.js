@@ -351,6 +351,7 @@ const states = [
             {"id": "RA"},
             {"id": "YL"},
             {"id": "SC"},
+            {"id": "SEC"},
             {"id": "RW"},
             {"id": "UF"},
             {"id": "KY"},
