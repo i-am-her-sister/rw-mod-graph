@@ -2281,7 +2281,6 @@ const states = [
             ["BL", "TM"],
             ["TM", "SI"],
             ["TM", "SB"],
-            ["TM", "GS"],
             ["FR", "GW"],
             ["FR", "MS"],
             ["FR", "SB"],
