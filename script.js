@@ -2457,7 +2457,7 @@ const states = [
             {"id": "FR", "fullName": "FAR SHORE (FR)", "defaultChecked": false},
             {"id": "MF", "fullName": "MOSS FIELD (MF)", "defaultChecked": false},
             {"id": "CW", "fullName": "CHASING WIND (CW)", "defaultChecked": false},
-            {"id": "GU", "fullName": "GRAY URBAN (GU)", "defaultChecked": false},
+            {"id": "GU", "fullName": "GAY URBAN // GRAY URBAN (GU)", "defaultChecked": false},
             {"id": "NP", "fullName": "NECROPOLIS (NP)", "defaultChecked": false},
             {"id": "EU", "fullName": "LUMINOUS COVE (EU)", "defaultChecked": false},
             {"id": "GS", "fullName": "GILDED SANCTUARY (GS)", "defaultChecked": false},
